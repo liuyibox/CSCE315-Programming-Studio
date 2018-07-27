@@ -1,0 +1,16 @@
+OPEN ClassSchedule;
+
+hrbb113_classes <- select (Location == HRBB 113) ClassSchedule;
+SHOW hrbb113_classes;
+WRITE hrbb113_classes;
+
+rem_cs_classes <- select (Subj == CSCE && Rem > 0) ClassSchedule;
+SHOW rem_cs_classes;
+WRITE rem_cs_classes;
+
+hrbb113_rem_cs_classes <- hrbb113_classes & rem_cs_classes;
+SHOW hrbb113_rem_cs_classes;
+WRITE hrbb113_rem_cs_classes;
+
+EXIT;
+

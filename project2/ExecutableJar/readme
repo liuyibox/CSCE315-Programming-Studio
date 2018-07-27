@@ -1,0 +1,4 @@
+Download all three files to same folder.   
+ClassSchedule.db contains Texas A&M 2017 Fall Schedule as a database.  
+ClassScheduleQueries.txt contains three queries not available on Howdy.  
+Running the command "java -jar DBMS.jar" followed by the command text file name will execute the database commands from the text file.  
