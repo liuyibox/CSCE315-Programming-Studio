@@ -1,0 +1,8 @@
+OPEN ClassSchedule;
+hrbb_class <- select (Location == HRBB 113) ClassSchedule;
+SHOW hrbb_class;
+rem_cs_classes <- select (Subj == CSCE && Rem > 0) ClassSchedule;
+SHOW rem_cs_classes;
+natjoin_test <- hrbb_class & rem_cs_classes;
+SHOW natjoin_test;
+EXIT;
